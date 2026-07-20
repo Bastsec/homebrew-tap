@@ -4,19 +4,19 @@
 class Kifaru < Formula
   desc "Autonomous security testing agent for the terminal."
   homepage "https://github.com/Bastsec/kifaru"
-  version "1.0.145"
+  version "1.0.146"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.145/kifaru-darwin-x64.zip"
-      sha256 "62b7b8443f7118a6a25774f2f58236b789ddeb9349cba286faaddb3c086e8664"
+      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.146/kifaru-darwin-x64.zip"
+      sha256 "e460c7f47965a6dd66fca1ac8ea3ff7df367b5238e61e0e5c434098f8e77f45c"
       def install
         bin.install "kifaru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.145/kifaru-darwin-arm64.zip"
-      sha256 "76972ad817fae0e692bf6edf01b02fb58deb83b28db687c8e701982d41ac95d1"
+      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.146/kifaru-darwin-arm64.zip"
+      sha256 "9472d791aacac6b7aa6da1e4f7920354b590acc5323c73f405cdea6879d366b4"
       def install
         bin.install "kifaru"
       end
@@ -25,15 +25,15 @@ class Kifaru < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.145/kifaru-linux-x64.tar.gz"
-      sha256 "95fed1fbc2751d5e087eba488dabb49c14efcda2e209ad86ace9650ddcdb0441"
+      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.146/kifaru-linux-x64.tar.gz"
+      sha256 "e885d4094a37ef04978674aadf92bf6e2442a4b4c7a5e8b64e7a2a5609e20e5e"
       def install
         bin.install "kifaru"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.145/kifaru-linux-arm64.tar.gz"
-      sha256 "a933b769c7bb224126ef1ba81ee4243e5f7bb4c2bd915c0976e9d1ec8d417b93"
+      url "https://github.com/Bastsec/kifaru/releases/download/v1.0.146/kifaru-linux-arm64.tar.gz"
+      sha256 "39102fa9aafc054cd269f09c929bed4af7febeb8ea8b5f97880c06de0d4ba4c6"
       def install
         bin.install "kifaru"
       end
